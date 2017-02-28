@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import config from '../config';
 
-mongoose.connect(config.get('db:mongo_uri'));
+mongoose.connect(config.get('MONGO_URI') || config.get('db:mongo_uri')); // (?)
 const db = mongoose.connection;
 
 db.on('error', (err) => {
