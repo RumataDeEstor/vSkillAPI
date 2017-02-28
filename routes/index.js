@@ -1,9 +1,5 @@
-// import users from './users';
-
-// export default function (app) {
-//   app.use('/api/users', users);
-// }
+import levels from './levels';
 
 export default function (app) {
-  app.use('/api/users', (req, res) => res.send('users!'));
+  app.use('/api/levels', levels);
 }
