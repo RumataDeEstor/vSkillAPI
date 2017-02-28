@@ -1,8 +1,8 @@
 import express from 'express';
-import config from './config';
+// import config from './config';
 import addMiddleware from './middleware';
 
-const port = config.get('port');
+const port = process.env.PORT || 8080;
 const app = express();
 
 addMiddleware(app);
