@@ -1,0 +1,6 @@
+{
+  "port": 7272,
+  "db": {
+    "mongo_uri": "mongodb://127.0.0.1/app"
+  }
+}
