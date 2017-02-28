@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-watch index.js"
+    "local": "babel-watch index.js",
+    "start":  "node lib/index.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
